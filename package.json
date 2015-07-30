@@ -1,0 +1,24 @@
+{
+  "name": "sgb-screen-tour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/screen-tour.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SYNERGY-GB/sgb-screen-tour.git"
+  },
+  "author": "Luis Miglietti <luis.miglietti@synergy-gb.com>",
+  "license": "Propietary",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/sgb-screen-tour/issues"
+  },
+  "homepage": "https://github.com/SYNERGY-GB/sgb-screen-tour",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.9.0",
+    "vinyl-transform": "^1.0.0"
+  }
+}
