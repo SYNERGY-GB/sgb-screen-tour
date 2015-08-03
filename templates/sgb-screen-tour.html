@@ -4,11 +4,11 @@
       <a class="button button-clear" nav-clear>Start</a>
     </ion-nav-buttons>
     <ion-slide-box does-continue="true">
-      <ion-slide ng-repeat="slide in slides">
-        <div ng-show="slide.desc" class="item-text-wrap">
+      <ion-slide class="padding" ng-repeat="slide in slides">
+        <div class="padding" ng-show="slide.desc" class="item-text-wrap">
           <p>{{slide.desc}} </p>
         </div>
-        <div class="item-body">
+        <div class="padding item-body">
           <img class="full-image" ng-src="{{slide.image}}">
         </div>
       </ion-slide>
