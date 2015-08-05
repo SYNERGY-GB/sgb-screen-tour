@@ -10,11 +10,11 @@ Se espera recibir una lista de ítems donde cada ítem debe tener los siguientes
 
 Datos obligatorios
 
-image: enlace a una imágen correspondiente al ítem
+- image: enlace a una imágen correspondiente al ítem
 
 Datos esperados
 
-desc: alguna descripción del ítem (opcional)
+- desc: alguna descripción del ítem (opcional)
 
 Ejemplo JSON
 
