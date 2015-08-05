@@ -20,8 +20,6 @@ Ejemplo JSON
 
 ![Alt Text](https://s3.amazonaws.com/megazord-framework/json+screenshots/json-tour.png)
 
-\end{lstlisting}
-
 Diseño
 
 ![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-tour.png)
