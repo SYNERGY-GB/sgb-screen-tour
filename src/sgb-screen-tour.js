@@ -7,5 +7,4 @@ angular.module('sgb-screen-tour', ['megazord'])
         _screen.initialize($scope, _screenParams);
         $scope.slides = $stateParams.data; 
         $scope.goTo = _screenParams.goTo; 
-
     }]);
