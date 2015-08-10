@@ -1,12 +1,17 @@
 <ion-view view-title="{{ title | translate }}">
   <ion-content class="padding">
-    <ion-slide-box does-continue="true">
+    <ion-slide-box does-continue="true" show-pager="{{showPager}}">
       <ion-slide class="padding"  ng-repeat="slide in slides">
+        <div ng-show="slide.title" class="item-text-wrap">
+          <h4>{{slide.title | limitTo: 60}}</h4>
+        </div>
+        <div class="item-body" ng-class="{'row' : reduceImage}">
+          <div class="col col-center col-10 large-icon" ng-click="previous()" ng-show="reduceImage"><i class="{{previousIcon}}"></i></div>
+          <img class="full-image" ng-class="{'col col-80 padding' : reduceImage}" ng-src="{{slide.image}}">
+          <div class="col col-center col-10 large-icon" ng-click="next()" ng-show="reduceImage"><i class="{{nextIcon}}"></i></div>
+        </div>
         <div ng-show="slide.desc" class="item-text-wrap">
           <p>{{slide.desc}}</p>
-        </div>
-        <div class="item-body">
-          <img class="full-image" ng-src="{{slide.image}}">
         </div>
         <br>
       </ion-slide>
