@@ -7,7 +7,7 @@
         </div>
         <div class="item-body" ng-class="{'row' : reduceImage}">
           <div class="col col-center col-10 large-icon" ng-click="previous()" ng-show="reduceImage"><i class="{{previousIcon}}"></i></div>
-          <img class="full-image" ng-class="{'col col-80 padding' : reduceImage}" ng-src="{{slide.image}}">
+          <img class="full-image" style="width:100%" ng-class="{'col col-80 padding' : reduceImage}" ng-src="{{slide.image}}">
           <div class="col col-center col-10 large-icon" ng-click="next()" ng-show="reduceImage"><i class="{{nextIcon}}"></i></div>
         </div>
         <div ng-show="slide.desc" class="item-text-wrap">

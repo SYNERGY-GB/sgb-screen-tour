@@ -12,8 +12,6 @@ angular.module('sgb-screen-tour', ['megazord'])
         $scope.showPager = _screenParams.showProgress ; 
 
         $scope.reduceImage = $scope.previousIcon && $scope.nextIcon; 
-        console.log($scope.reduceImage, "d"); 
-
         $scope.next = function() {
     		$ionicSlideBoxDelegate.next();
   		};
