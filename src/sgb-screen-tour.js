@@ -9,7 +9,11 @@ angular.module('sgb-screen-tour', ['megazord'])
         $scope.goTo = _screenParams.goTo; 
         $scope.previousIcon = _screenParams.previousIcon; 
         $scope.nextIcon = _screenParams.nextIcon; 
-        $scope.showPager = _screenParams.showProgress ; 
+
+        //Show pager depending on user choice
+        $scope.showPager = _screenParams.showProgress;
+
+
 
         $scope.reduceImage = $scope.previousIcon && $scope.nextIcon; 
         $scope.next = function() {
