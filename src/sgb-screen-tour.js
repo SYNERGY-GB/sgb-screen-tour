@@ -6,16 +6,15 @@ angular.module('sgb-screen-tour', ['megazord'])
 
         _screen.initialize($scope, _screenParams);
         $scope.slides = $stateParams.data; 
-        $scope.goTo = _screenParams.goTo; 
         $scope.previousIcon = _screenParams.previousIcon; 
         $scope.nextIcon = _screenParams.nextIcon; 
 
         //Show pager depending on user choice
         $scope.showPager = _screenParams.showProgress;
 
-
-
+        //Show icons if both selected
         $scope.reduceImage = $scope.previousIcon && $scope.nextIcon; 
+
         $scope.next = function() {
     		$ionicSlideBoxDelegate.next();
   		};

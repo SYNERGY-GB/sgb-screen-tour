@@ -1,6 +1,6 @@
 <ion-view view-title="{{ title | translate }}">
   <ion-content class="padding">
-    <ion-slide-box does-continue="true" show-pager="{{showPager}}">
+    <ion-slide-box does-continue="true" show-pager="{{showProgress}}">
       <ion-slide class="padding"  ng-repeat="slide in slides">
         <div ng-show="slide.title" class="item-text-wrap">
           <h4>{{slide.title | limitTo: 60}}</h4>
