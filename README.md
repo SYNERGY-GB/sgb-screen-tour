@@ -12,7 +12,7 @@ Se espera recibir una lista de ítems donde cada ítem debe tener los siguientes
 
 - **image**: enlace a una imágen correspondiente al ítem
 
-<h3> Datos esperados </h3>
+<h3> Datos opcionales</h3>
 
 - **desc**: alguna descripción del ítem (opcional)
 
