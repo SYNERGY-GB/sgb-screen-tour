@@ -19,15 +19,15 @@ angular.module('sgb-screen-tour', ['megazord'])
 
         //Change text when slide changes
         $scope.changeText = function (slide) {
-          $scope.desc = $scope.slides[$ionicSlideBoxDelegate.currentIndex()].desc; 
+            $scope.desc = $scope.slides[$ionicSlideBoxDelegate.currentIndex()].desc; 
         };
 
         $scope.next = function() {
       		$ionicSlideBoxDelegate.next();
-    		};
-    		$scope.previous = function() {
+    	};
+    	$scope.previous = function() {
       		$ionicSlideBoxDelegate.previous();
-    		};
+    	};
 
     }]);
 
