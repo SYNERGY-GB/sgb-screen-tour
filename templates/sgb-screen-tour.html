@@ -1,6 +1,7 @@
 <ion-view view-title="{{ title | translate }}">
   <ion-content class="padding">
-    <ion-slide-box does-continue="true" show-pager="{{_screenParams.showProgress}}">
+    <ion-slide-box does-continue="true" show-pager="{{_screenParams.showProgress}}" 
+          on-slide-changed="changeText($index)">
       <ion-slide class="padding"  ng-repeat="slide in slides">
         <div ng-show="slide.title" class="item-text-wrap">
           <h4>{{slide.title | limitTo: 60}}</h4>
@@ -9,18 +10,18 @@
           <div class="col col-center col-10 large-icon" ng-click="previous()" ng-show="reduceImage">
               <i class="{{_screenParams.previousIcon}}"></i>
           </div>
-          <div ng-class="{'col col-80 padding' : reduceImage}" ng-show="slide.image">
-            <img class="full-image" style="width:100%"  ng-src="{{slide.image}}">
+          <div ng-class="{'col col-80' : reduceImage}" ng-show="slide.image">
+            <img class="full-image"  ng-src="{{slide.image}}">
           </div>
           <div class="col col-center col-10 large-icon" ng-click="next()" ng-show="reduceImage">
             <i class="{{_screenParams.nextIcon}}"></i>
           </div>
         </div>
-        <div ng-show="slide.desc" class="item-text-wrap">
-          <p>{{slide.desc}}</p>
-        </div>
-        <br>
+        <br/>
       </ion-slide>
     </ion-slide-box>
+    <div ng-show="desc.length > 0" class="item-text-wrap">
+      <p>{{desc}}</p>
+    </div>
   </ion-content>
 </ion-view>
