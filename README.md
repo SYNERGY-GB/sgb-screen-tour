@@ -18,7 +18,16 @@ Se espera recibir una lista de ítems donde cada ítem debe tener los siguientes
 
 <h3> Ejemplo JSON </h3>
 
-![Alt Text](https://s3.amazonaws.com/megazord-framework/json+screenshots/json-tour.png)
+	[
+	    {
+	        "desc": "<descripcion del item 1>",
+	        "image": "<enlace a la imagen del item 1>"
+	    },
+	    {
+	        "desc": "<descripcion del item 2>",
+	        "image": "<enlace a la imagen del item 2>"
+	    }
+	]
 
 <h3> Parámetros de configuración </h3>
 
