@@ -14,16 +14,19 @@ Se espera recibir una lista de ítems donde cada ítem debe tener los siguientes
 
 <h3> Datos opcionales</h3>
 
+- **title**: Título del ítem (opcional)
 - **desc**: alguna descripción del ítem (opcional)
 
 <h3> Ejemplo JSON </h3>
 
 	[
 	    {
+	    	"title": "<Títuto del item_1">,
 	        "desc": "<descripcion del item 1>",
 	        "image": "<enlace a la imagen del item 1>"
 	    },
 	    {
+	    	"title": "<Títuto del item_2">,
 	        "desc": "<descripcion del item 2>",
 	        "image": "<enlace a la imagen del item 2>"
 	    }
