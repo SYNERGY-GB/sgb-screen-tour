@@ -2,14 +2,14 @@
 'use strict';
 
 angular.module('sgb-screen-tour', ['megazord'])
-    .controller('sgb-screen-tour-controller', ['$stateParams', '_screen', '_screenParams', '$scope','$ionicSlideBoxDelegate', 
-    			function ($stateParams, _screen, _screenParams, $scope, $ionicSlideBoxDelegate) {
+    .controller('sgb-screen-tour-controller', ['_data', '_screen', '_screenParams', '$scope','$ionicSlideBoxDelegate', 
+    			function (_data, _screen, _screenParams, $scope, $ionicSlideBoxDelegate) {
 
         //Obtain parameters from config file
         _screen.initialize($scope, _screenParams);
 
         //Obtain screen data
-        $scope.slides = $stateParams.data; 
+        $scope.slides = _data; 
 
         //Show icons if both selected
         $scope.reduceImage = $scope._screenParams.previousIcon && $scope._screenParams.nextIcon; 
